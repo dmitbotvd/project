@@ -1,21 +1,26 @@
 'use strict';
 
-let num = 50;
+const str = 'test';
 
-// while (num <= 55) {
-//   console.log(num);
-//   num++;
-// }
+//console.log(str[2]);
+console.log(str.toUpperCase());
+console.log(str);
 
-// do {
-//   console.log(num);
-//   num++;
-// }
-// while (num < 55);
+const fruit = "Some fruit";
 
-for (let i = 1; i < 10; i++) {
-  if (i === 6) {
-    continue;
-  }
-  console.log(i);
-}
+console.log(fruit.indexOf('fruit'));
+
+const logg = 'hello world';
+
+//console.log(logg.slice(6, 11));
+
+//console.log(logg.substring(6, 11));
+
+console.log(logg.substr(6, 5));
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = '12.2px';
+console.log(parseInt(test));
+console.log(parseFloat(test));
