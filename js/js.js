@@ -1,39 +1,27 @@
-"use strict";
+//const btns = document.querySelectorAll('button'),
+      //overlay = document.querySelector('.overlay');
 
-// console.log(typeof(String(null)));
-// console.log(typeof(String(4)));
+// btn.onclick = function() {
+//   alert('click');
+// };
+// let i = 0;
+// const deleteElement = (e) => {
+//   console.log(e.target);
+//   console.log(e.type);
+  // i++;
+  // if (i == 1) {
+  //   btn.removeEventListener('click', deleteElement);
+  // }
+//};
+//btn.addEventListener('click', deleteElement);
+//overlay.addEventListener('click', deleteElement);
 
-// console.log(typeof(undefined + ''));
+// btns.forEach(btn => {
+//   btn.addEventListener('click', deleteElement, {once: true});
+// });
+// const link = document.querySelector('a');
+// link.addEventListener('click', function(event) {
+//   event.preventDefault();
 
-// const num = 5;
-
-// console.log('https://vk.com/catalog/' + num);
-
-// const fontSize = 26 + 'px';
-
-// console.log(typeof(Number('4')));
-
-// console.log(typeof(+'4'));
-
-// console.log(typeof(parseInt("15px", 10)));
-
-// let answ = +prompt("hello", "");
-
-// все превращаеться в не правду
-//0, '', null, undefined, NaN;
-
-// let switcher = null;
-
-// if (switcher) {
-//   console.log('Working...');
-// }
-
-// switcher = 1;
-
-// if (switcher) {
-//   console.log('Working...');
-// }
-
-// console.log(typeof(Boolean('4')));
-
-// console.log(typeof(!!"44444"));
+//   console.log(event.target);
+// });
