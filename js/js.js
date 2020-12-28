@@ -1,27 +1,27 @@
-//const btns = document.querySelectorAll('button'),
-      //overlay = document.querySelector('.overlay');
+const box = document.querySelector('.box'),
+      btn = document.querySelector('button');
 
-// btn.onclick = function() {
-//   alert('click');
-// };
-// let i = 0;
-// const deleteElement = (e) => {
-//   console.log(e.target);
-//   console.log(e.type);
-  // i++;
-  // if (i == 1) {
-  //   btn.removeEventListener('click', deleteElement);
-  // }
-//};
-//btn.addEventListener('click', deleteElement);
-//overlay.addEventListener('click', deleteElement);
+// const width = box.clientWidth;
+// const height = box.clientHeight;
 
-// btns.forEach(btn => {
-//   btn.addEventListener('click', deleteElement, {once: true});
-// });
-// const link = document.querySelector('a');
-// link.addEventListener('click', function(event) {
-//   event.preventDefault();
+// const width = box.offsetWidth;
+// const height = box.offsetHeight;
 
-//   console.log(event.target);
-// });
+const width = box.scrollWidth;
+const height = box.scrollHeight;
+
+console.log(width, height);
+
+btn.addEventListener('click', () => {
+  //box.style.height = box.scrollHeight + 'px';
+  console.log(box.scrollTop);
+});
+
+console.log(box.getBoundingClientRect().top);
+
+const style = window.getComputedStyle(box);
+console.log(style.display);
+
+console.log(document.documentElement.clientWidth);
+//document.documentElement.scrollTop = 0;
+
