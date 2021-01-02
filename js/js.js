@@ -45,7 +45,7 @@
 // alex.hello();
 // console.log(ivan);
 // console.log(alex);
-'use strict';
+//'use strict';
 // function showThis(a, b) {
 //   console.log(this);
 //   function sum() {
@@ -102,23 +102,23 @@
 //3) this в конструкторах и классах это новый экземпляр обьекта 
 //4) ручная привязка this: call, apply, bind
 
-const btn = document.querySelector('button');
+// const btn = document.querySelector('button');
 
-btn.addEventListener('click', (e) => {
-  //console.log(this);
-  e.target.style.backgroundColor = 'red';
-});
+// btn.addEventListener('click', (e) => {
+//   //console.log(this);
+//   e.target.style.backgroundColor = 'red';
+// });
 
-const obj = {
-  num: 5,
-  sayNumber: function() {
-    const say = () => {
-      console.log(this);
-    };
-    say();
-  }
-};
-obj.sayNumber();
+// const obj = {
+//   num: 5,
+//   sayNumber: function() {
+//     const say = () => {
+//       console.log(this);
+//     };
+//     say();
+//   }
+// };
+// obj.sayNumber();
 
-const double = a => a * 2;
-console.log(double(4));
+// const double = a => a * 2;
+// console.log(double(4));
